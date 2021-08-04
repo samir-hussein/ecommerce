@@ -1,0 +1,10 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Playfair Display', serif;
+}
+
+h1,h2,h3,h4,h6{
+	font-family: 'Roboto Slab', serif;
+}
