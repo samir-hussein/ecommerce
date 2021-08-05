@@ -3,8 +3,38 @@ body,html{
 	padding: 0;
 	overflow-x: hidden;
 	font-family: 'Playfair Display', serif;
+	background-color: #f3f6fa;
 }
 
-h1,h2,h3,h4,h6{
-	font-family: 'Roboto Slab', serif;
+h1,h2,h3,h4,h6,button{
+	font-family: 'Roboto Slab', serif !important;
 }
+
+header{
+	background-color: white;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+header nav{
+	padding: 1%;
+	width: 70%;
+	margin: auto;
+}
+
+@media (max-width: 575.98px) {
+	header nav{
+		width: 90%;
+	}
+
+	#search{
+		width: 100% !important;
+		margin-top: 1.5%;
+	}
+
+	#logo{
+		width: 70px;
+	}
+}
+
+@media (min-width: 575.98px) and (max-width: 1199.98px) {}
