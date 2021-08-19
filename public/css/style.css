@@ -11,14 +11,19 @@ h1,h2,h3,h4,h6,button{
 }
 
 header{
+	height: 89px;
+}
+header nav{
 	background-color: white;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-}
-header nav{
 	padding: 1%;
-	width: 70%;
+	margin: auto;
+}
+
+header nav #container{
+	width: 80%;
 	margin: auto;
 }
 
@@ -76,13 +81,20 @@ header nav{
 	background-color: inherit !important;
 }
 
+#sec-1{
+	width: 80%;
+	margin: auto;
+	padding: 2% 0;
+}
+
 @media (max-width: 575.98px) {
 	header{
-		position: static;
-		padding-top: 2%;
+		height: auto;
 	}
-
-	header nav{
+	header nav {
+		position: static;
+	}
+	header nav #container{
 		width: 90%;
 	}
 

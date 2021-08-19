@@ -1,6 +1,6 @@
-<header class="uk-box-shadow-small">
-    <nav>
-        <div class="d-flex justify-content-around align-items-center flex-wrap">
+<header>
+    <nav class="uk-box-shadow-small">
+        <div id="container" class="d-flex justify-content-around align-items-center flex-wrap">
             <div class="order-0 uk-margin-small-bottom align-self-center">
                 <a href="/"><img id="logo" src="{{ asset('images/logo.png') }}" width="80" alt="logo"></a>
             </div>
