@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +19,13 @@
     {{-- font links --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
 
     {{-- bootstrap v5.0 css links --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
-    {{-- UIKit css links--}}
+    {{-- UIKit css links --}}
     <link rel="stylesheet" href="{{ asset('css/uikit.min.css') }}">
 
     {{-- wow.js css link --}}
@@ -35,6 +37,7 @@
     {{-- my style file --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+
 <body>
 
     <div class="preload">
@@ -73,4 +76,5 @@
         new WOW().init();
     </script>
 </body>
+
 </html>

@@ -22,7 +22,66 @@ header nav{
 	margin: auto;
 }
 
+#div_searchbar button{
+	background-color: #7fad39;
+	border: 1px solid #7fad39;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	margin: 0;
+}
+#div_searchbar button a{
+	color: snow;
+	display: block;
+	margin: auto !important;
+}
+#div_searchbar button a svg{
+	width: 30px;
+	height: 30px;
+}
+
+#user_icon{
+	border: none;
+	padding: 0;
+	color: #7fad39;
+}
+#user_icon a{
+	color: #7fad39;
+}
+
+.uk-offcanvas-bar{
+	padding-left: 10px;
+}
+.uk-offcanvas-bar div{
+	margin-top: 5% !important;
+	margin-bottom: 5% !important;
+}
+.uk-offcanvas-bar div button{
+	background-color: inherit;
+	border: none;
+	color: snow;
+}
+.uk-offcanvas-bar div button:hover{
+	background-color: inherit;
+}
+.uk-offcanvas-bar div ul{
+	background-color: inherit;
+	padding-left: 15px;
+	border: none;
+	position: inherit !important;
+    inset: unset !important;
+    margin: 0px !important;
+    transform: translate(0) !important;
+}
+.uk-offcanvas-bar div ul li a:hover{
+	background-color: inherit !important;
+}
+
 @media (max-width: 575.98px) {
+	header{
+		position: static;
+		padding-top: 2%;
+	}
+
 	header nav{
 		width: 90%;
 	}
@@ -33,7 +92,7 @@ header nav{
 	}
 
 	#logo{
-		width: 70px;
+		width: 60px;
 	}
 }
 
