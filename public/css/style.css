@@ -147,6 +147,9 @@ header nav #container{
 #sponsored{
 	padding: 2% 5%;
 }
+#sponsored div img{
+	width: 150px;
+}
 
 footer #div-1{
 	background-color: #323232;
@@ -193,6 +196,19 @@ footer #div-2{
 		width: 95% !important;
 	}
 
+	h1{
+		font-size: 22px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 19px;
+	}
+	p {
+		font-size: 17px !important;
+	}
+
 	header{
 		height: auto;
 	}
@@ -200,7 +216,18 @@ footer #div-2{
 		position: static;
 	}
 	header nav #container{
-		width: 90%;
+		width: 95%;
+	}
+	header nav #container div.order-0{
+		width: 30%;
+	}
+	header nav #container div.order-2{
+		width: 50%;
+		margin-left: 20%;
+	}
+
+	#sec-1{
+		width: 95%;
 	}
 
 	#search{
@@ -212,6 +239,89 @@ footer #div-2{
 	#logo{
 		width: 60px;
 	}
+
+	.sec-pro{
+		padding: 2%;
+	}
+
+	#sec-seller{
+		padding: 2%;
+	}
+	#sec-seller a{
+		width: 95%;
+	}
+	#sec-seller a div{
+		width: 100%;
+	}
+	#sec-seller a div h2{
+		font-size: 18px;
+		padding: 0;
+		width: 65%;
+	}
+
+	#sponsored{
+		padding: 2%;
+	}
+
+	footer #div-1{
+		padding: 2% 4%; 
+	}
+	footer div a img{
+		width: 100px;
+	}
+	footer div div h3{
+		font-size: 16px !important;
+	}
+	footer div p{
+		font-size: 14px!important;
+		width: 90%;
+	}
 }
 
-@media (min-width: 575.98px) and (max-width: 1199.98px) {}
+@media (min-width: 575.98px) and (max-width: 1199.98px) {
+	h1{
+		font-size: 22px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 19px;
+	}
+	p {
+		font-size: 17px !important;
+	}
+
+	header{
+		height: auto;
+	}
+	header nav {
+		position: static;
+	}
+
+	.sec-pro{
+		padding: 2%;
+	}
+
+	#sec-seller{
+		padding: 2%;
+	}
+
+	#sponsored{
+		padding: 2%;
+	}
+
+	footer #div-1{
+		padding: 2% 4%; 
+	}
+	footer div a img{
+		width: 100px;
+	}
+	footer div div h3{
+		font-size: 16px !important;
+	}
+	footer div p{
+		font-size: 14px!important;
+		width: 90%;
+	}
+}

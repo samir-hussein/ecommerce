@@ -46,14 +46,8 @@
         <div class="loader">Loading...</div>
     </div>
 
-    {{-- include navbar --}}
-    @include('layouts.navbar')
-
     {{-- body --}}
     @yield('content')
-
-    {{-- include footer --}}
-    @include('layouts.footer')
 
     {{-- jQuery v3.6.0 link --}}
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>

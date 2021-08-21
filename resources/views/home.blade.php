@@ -34,14 +34,14 @@
 
             <div class="col-12 col-xl-2">
                 <div class="row h-100">
-                    <div class="col-4 col-lg-12">
+                    <div class="col-4 col-xl-12">
                         <a href="#"><img class="h-75 w-100 uk-box-shadow-medium" src="{{ asset('images/218x184_EN.jpg') }}" alt=""></a>
                     </div>
-                    <div class="col-4 col-lg-12">
+                    <div class="col-4 col-xl-12">
                         <a href="#"><img class="h-75 w-100 uk-box-shadow-medium" src="{{ asset('images/5231147063618082677.png') }}"
                                 alt=""></a>
                     </div>
-                    <div class="col-4 col-lg-12">
+                    <div class="col-4 col-xl-12">
                         <a href="#"><img class="h-75 w-100 uk-box-shadow-medium" src="{{ asset('images/218x184_EN (1).jpg') }}" alt=""></a>
                     </div>
                 </div>
@@ -184,8 +184,8 @@
         <section id="sec-seller">
             <a href="#" class="d-block uk-box-shadow-medium">
                 <div class="row">
-                    <h2 class="col-10 m-auto">Sell To Millions Of Customers On eCommerce</h2>
-                    <img class="col-2" src="{{ asset('images/apple-touch-icon.png') }}" alt="logo" width="100">
+                    <h2 class="col-8 col-lg-10 m-auto">Sell To Millions Of Customers On eCommerce</h2>
+                    <img class="col-4 col-lg-2" src="{{ asset('images/apple-touch-icon.png') }}" alt="logo" width="100">
                 </div>
             </a>
         </section>
@@ -460,7 +460,7 @@
                 <h3 class="uk-heading-bullet">SPONSORED BY</h3>
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay-interval: 6000;autoplay: true;pause-on-hover: true">
 
-                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@m uk-grid">
+                    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-5@s uk-grid">
                         <li>
                             <div class="uk-panel">
                                 <img src="{{ asset('images/1.jpg') }}" alt="">
