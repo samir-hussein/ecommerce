@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
 
     {{-- my style file --}}
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav_footer_style.css') }}">
 
     @yield('style')
 </head>

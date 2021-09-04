@@ -4,9 +4,9 @@
 
             <div class="order-0 d-flex">
                 <div class="align-self-end" style="margin-right: 8%">
-                    <button style="color: #7fad39;"
-                        class="p-0 border-0 uk-button uk-button-default uk-margin-small-left" type="button"
-                        uk-toggle="target: #offcanvas-reveal"><span uk-icon="icon: menu; ratio: 1.5"></span></button>
+                    <button style="color: #7fad39;" class="p-0 border-0 uk-button uk-button-default uk-margin-small-left"
+                        type="button" uk-toggle="target: #offcanvas-reveal"><span
+                            uk-icon="icon: menu; ratio: 1.5"></span></button>
 
                     <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true">
                         <div class="uk-offcanvas-bar">
@@ -99,11 +99,14 @@
                 <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500">
                     <ul class="uk-nav uk-dropdown-nav">
                         <li class="uk-active"><a href="/sign-in"><button style="background: #7fad39;color:snow"
-                                    class="uk-button uk-button-default w-100">SIGN IN<span uk-icon="sign-in"></span></button>
+                                    class="uk-button uk-button-default w-100">SIGN IN<span
+                                        uk-icon="sign-in"></span></button>
                             </a></li>
-                        <li><a href="/sign-up"><button class="uk-button uk-button-default w-100">SIGN UP<span uk-icon="sign-in"></span></button>
+                        <li><a href="/sign-up"><button class="uk-button uk-button-default w-100">SIGN UP<span
+                                        uk-icon="sign-in"></span></button>
                             </a></li>
-                        <li><a href="#"><button class="uk-button uk-button-default w-100">SIGN OUT<span uk-icon="sign-out"></span></button>
+                        <li><a href="#"><button class="uk-button uk-button-default w-100">SIGN OUT<span
+                                        uk-icon="sign-out"></span></button>
                             </a></li>
                     </ul>
                 </div>
@@ -112,6 +115,37 @@
                 <a href="" style="color: #7fad39;" class="uk-icon-link uk-margin-small-left"
                     uk-icon="icon: heart; ratio: 1.5"></a><span class="uk-badge">0</span>
             </div>
+        </div>
+
+        <div class="m-auto" id="catigory-nav-list">
+            <ul class="list-inline mb-0 mt-3">
+                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">all</a>
+                </li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Mobiles
+                        &
+                        Accessories</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#"
+                        class="text-decoration-none">Computer &
+                        Accessories</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">TVs</a>
+                </li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#"
+                        class="text-decoration-none">Laptops</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Cameras
+                        &
+                        Accessories</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#"
+                        class="text-decoration-none">Headphones</a>
+                </li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#"
+                        class="text-decoration-none">Speakers</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#"
+                        class="text-decoration-none">Wearable
+                        Technology</a></li>
+                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Home
+                        Entertainment
+                        Systems</a></li>
+            </ul>
         </div>
     </nav>
 </header>
