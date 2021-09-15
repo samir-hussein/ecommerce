@@ -15,66 +15,29 @@
 
                             <h3>All Categories</h3>
 
-                            <div class="dropend">
-                                <button class="w-100 d-flex justify-content-between align-items-center dropdown-toggle"
-                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropend">
-                                <button class="w-100 d-flex justify-content-between align-items-center dropdown-toggle"
-                                    type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropend">
-                                <button class="w-100 d-flex justify-content-between align-items-center dropdown-toggle"
-                                    type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropend">
-                                <button class="w-100 d-flex justify-content-between align-items-center dropdown-toggle"
-                                    type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="dropend">
-                                <button class="w-100 d-flex justify-content-between align-items-center dropdown-toggle"
-                                    type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                            <ul data-role="treeview">
+                                <li data-icon="<span class='mif-star-full'></span>" data-caption="Favorites">
+                                    <ul>
+                                        <li data-icon="<span class='mif-library'></span>" data-caption="Projects"></li>
+                                        <li data-icon="<span class='mif-download'></span>" data-caption="Downloads">
+                                        </li>
+                                        <li data-icon="<img src='images/desktop.png'>" data-caption="Desktop"></li>
+                                    </ul>
+                                </li>
+                                <li data-icon="<span class='mif-onedrive'></span>" data-caption="OneDrive">
+                                    <ul>
+                                        <li data-caption="Documents"></li>
+                                        <li data-caption="Projects" data-collapsed="true">
+                                            <ul>
+                                                <li data-caption="Web"></li>
+                                                <li data-caption="Android"></li>
+                                                <li data-caption="Windows"></li>
+                                                <li data-caption="iOS"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -92,9 +55,10 @@
                 </div>
             </div>
 
-            <div class="order-2" style="border-left: 3px solid #7fad39">
-                <button id="user_icon" class="uk-button uk-button-default" type="button"><a href=""
-                        class="uk-icon-link uk-margin-small-left" uk-icon="icon: user; ratio: 1.5"></a></button>
+            <div class="order-2 d-flex justify-content-center" style="border-left: 3px solid #7fad39;padding-left:1%">
+                <button id="user_icon" class="uk-button uk-button-default" type="button">
+                    <i class="fas fa-user nav-icon"></i>
+                </button>
 
                 <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500">
                     <ul class="uk-nav uk-dropdown-nav">
@@ -110,10 +74,12 @@
                             </a></li>
                     </ul>
                 </div>
-                <a href="" style="color: #7fad39;" class="uk-icon-link uk-margin-small-left"
-                    uk-icon="icon: cart; ratio: 1.5"></a><span class="uk-badge">0</span>
-                <a href="" style="color: #7fad39;" class="uk-icon-link uk-margin-small-left"
-                    uk-icon="icon: heart; ratio: 1.5"></a><span class="uk-badge">0</span>
+                <a href="#" class="nav-icon">
+                    <i class="fas fa-shopping-cart icon-color"></i><span class="uk-badge">0</span>
+                </a>
+                <a href="#" class="nav-icon">
+                    <i class="fas fa-heart icon-color"></i><span class="uk-badge">0</span>
+                </a>
             </div>
         </div>
 

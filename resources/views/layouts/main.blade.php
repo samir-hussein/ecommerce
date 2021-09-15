@@ -22,6 +22,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap"
         rel="stylesheet">
 
+    {{-- metro css link --}}
+    <link rel="stylesheet" href="{{ asset('css/metro.all.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">
+
     {{-- bootstrap v5.0 css links --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 
@@ -33,6 +37,9 @@
 
     {{-- preloader css link --}}
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
+
+    {{-- Font Awesome link --}}
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
 
     {{-- my style file --}}
     <link rel="stylesheet" href="{{ asset('css/nav_footer_style.css') }}">
@@ -57,6 +64,9 @@
 
     {{-- jQuery v3.6.0 link --}}
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+
+    {{-- metro js link --}}
+    <script src="{{ asset('js/metro.min.js') }}"></script>
 
     {{-- bootstrap v5.0 bundle link --}}
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
