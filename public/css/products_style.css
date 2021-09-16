@@ -38,7 +38,6 @@
 #products #right-panel .uk-card-media-top,
 #products #right-panel .uk-card-media-bottom {
     height: 250px;
-    /* overflow: hidden; */
     padding: 1%;
     display: flex;
     justify-content: center;
@@ -60,4 +59,52 @@
 
 #products #left-panel {
     border-right: 3px solid #7fad39;
+}
+#filter {
+    background-color: #7fad39;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 2%;
+    display: none;
+}
+.uk-close-large {
+    display: none;
+}
+
+@media (max-width: 575.98px) {
+    #products #left-panel {
+        position: absolute;
+        display: none;
+        z-index: 1000;
+        background-color: #f3f6fa;
+        width: 80%;
+        height: 100%;
+    }
+    .uk-first-column {
+        padding: 2%;
+    }
+    #filter {
+        display: block;
+    }
+    .uk-close-large {
+        display: block;
+    }
+}
+@media (min-width: 575.98px) and (max-width: 1199.98px) {
+    #products #left-panel {
+        position: absolute;
+        display: none;
+        z-index: 1000;
+        background-color: #f3f6fa;
+        width: 80%;
+        height: 100%;
+    }
+    #filter {
+        display: block;
+    }
+    .uk-close-large {
+        display: block;
+    }
 }

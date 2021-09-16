@@ -23,8 +23,7 @@
         rel="stylesheet">
 
     {{-- metro css link --}}
-    <link rel="stylesheet" href="{{ asset('css/metro.all.min.css') }}">
-    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">
+    <link rel="stylesheet" href="{{ asset('css/metro-all.min.css') }}">
 
     {{-- bootstrap v5.0 css links --}}
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -87,6 +86,8 @@
         // wow.js init
         new WOW().init();
     </script>
+
+    @yield('script')
 </body>
 
 </html>

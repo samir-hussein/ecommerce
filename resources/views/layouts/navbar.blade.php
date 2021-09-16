@@ -13,26 +13,28 @@
 
                             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-                            <h3>All Categories</h3>
+                            <h3 class="text-center">All Categories</h3>
 
                             <ul data-role="treeview">
-                                <li data-icon="<span class='mif-star-full'></span>" data-caption="Favorites">
+                                <li>test</li>
+                                <li>test</li>
+                                <li>test</li>
+                                <li data-caption="test2" data-collapsed="true">
                                     <ul>
-                                        <li data-icon="<span class='mif-library'></span>" data-caption="Projects"></li>
-                                        <li data-icon="<span class='mif-download'></span>" data-caption="Downloads">
+                                        <li>test</li>
+                                        <li data-caption="test3">
+                                            <ul>
+                                                <li>team</li>
+                                            </ul>
                                         </li>
-                                        <li data-icon="<img src='images/desktop.png'>" data-caption="Desktop"></li>
                                     </ul>
                                 </li>
-                                <li data-icon="<span class='mif-onedrive'></span>" data-caption="OneDrive">
+                                <li data-caption="test2" data-collapsed="true">
                                     <ul>
-                                        <li data-caption="Documents"></li>
-                                        <li data-caption="Projects" data-collapsed="true">
+                                        <li>test</li>
+                                        <li data-caption="test3">
                                             <ul>
-                                                <li data-caption="Web"></li>
-                                                <li data-caption="Android"></li>
-                                                <li data-caption="Windows"></li>
-                                                <li data-caption="iOS"></li>
+                                                <li>team</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -55,9 +57,11 @@
                 </div>
             </div>
 
-            <div class="order-2 d-flex justify-content-center" style="border-left: 3px solid #7fad39;padding-left:1%">
-                <button id="user_icon" class="uk-button uk-button-default" type="button">
-                    <i class="fas fa-user nav-icon"></i>
+            <div class="order-2 d-flex justify-content-center align-items-center"
+                style="border-left: 3px solid #7fad39;padding-left:1%">
+                <button id="user_icon"
+                    class="uk-button uk-button-default d-flex justify-content-center align-items-center" type="button">
+                    <i class="fas fa-user-cog nav-icon"></i>
                 </button>
 
                 <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500">

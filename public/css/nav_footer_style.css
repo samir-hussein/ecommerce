@@ -40,6 +40,17 @@ button {
     margin-left: 5%;
 }
 
+.treeview li .node-toggle::before {
+    border-color: #7fad39;
+    width: 8px;
+    height: 8px;
+    top: 70%;
+}
+.treeview li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 header {
     height: 89px;
 }
@@ -196,6 +207,7 @@ footer #div-2 {
     }
     header nav {
         position: static;
+        padding-top: 5%;
     }
     header nav #container {
         width: 95%;
@@ -268,6 +280,7 @@ footer #div-2 {
     }
     header nav {
         position: static;
+        padding-top: 5%;
     }
 
     footer #div-1 {

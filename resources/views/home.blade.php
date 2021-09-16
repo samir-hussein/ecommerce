@@ -58,11 +58,11 @@
             <div class="container uk-box-shadow-small">
                 <h3 class="uk-heading-bullet">Top selling items</h3>
 
-                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true;center: true">
+                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -199,11 +199,11 @@
             <div class="container uk-box-shadow-small">
                 <h3 class="uk-heading-bullet">Top selling items</h3>
 
-                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true;center: true">
+                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -330,11 +330,11 @@
             <div class="container uk-box-shadow-small">
                 <h3 class="uk-heading-bullet">Top selling items</h3>
 
-                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true;center: true">
+                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -530,11 +530,11 @@
             <div class="container uk-box-shadow-small">
                 <h3 class="uk-heading-bullet">Top selling items</h3>
 
-                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true;center: true">
+                <div uk-slider="sets: true;autoplay-interval: 6000;autoplay: true;pause-on-hover: true">
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
