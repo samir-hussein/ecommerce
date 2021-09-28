@@ -25,3 +25,12 @@ Route::get('/sign-in', function () {
 Route::get('/sign-up', function () {
     return view('sign_up');
 });
+Route::get('/profile', function () {
+    return view('customer_profile');
+});
+Route::get('/favourite-list', function () {
+    return view('favourite_list');
+});
+Route::get('/orders', function () {
+    return view('orders');
+});

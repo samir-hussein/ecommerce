@@ -1,0 +1,16 @@
+#tabs {
+    padding: 5%;
+    background-color: #fff;
+    margin: 3% auto;
+    width: 80%;
+}
+#tabs ul a {
+    color: black;
+}
+#tabs ul a:hover {
+    text-decoration: none;
+    color: #c7c7cd;
+}
+#tabs ul a.active {
+    color: #c7c7cd;
+}
