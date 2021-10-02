@@ -14,3 +14,46 @@
 #tabs ul a.active {
     color: #c7c7cd;
 }
+
+.uk-card-body {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.uk-card-media-top,
+.uk-card-media-bottom {
+    height: 250px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+.uk-card img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 2s;
+}
+.uk-card img:hover {
+    transform: scale(1.1);
+}
+.uk-heading-bullet {
+    font-size: 20px;
+}
+.uk-heading-bullet::before {
+    border-color: #7fad39;
+}
+
+.card-body div.card img {
+    height: 220px;
+    width: auto;
+    margin: auto;
+}
+
+@media (max-width: 575.98px) {
+    .uk-first-column {
+        padding: 2%;
+    }
+    #tabs ul {
+        font-size: 12px;
+    }
+}

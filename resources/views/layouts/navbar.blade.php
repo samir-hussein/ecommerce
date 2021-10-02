@@ -70,6 +70,10 @@
                                     class="uk-button uk-button-default w-100">SIGN IN<span
                                         uk-icon="sign-in"></span></button>
                             </a></li>
+                        <li class="uk-active"><a href="/sign-in"><button style="background: #7fad39;color:snow"
+                                    class="uk-button uk-button-default w-100">My Profile<span
+                                        uk-icon="sign-in"></span></button>
+                            </a></li>
                         <li><a href="/sign-up"><button class="uk-button uk-button-default w-100">SIGN UP<span
                                         uk-icon="sign-in"></span></button>
                             </a></li>
@@ -81,7 +85,7 @@
                 <a href="#" class="nav-icon">
                     <i class="fas fa-shopping-cart icon-color"></i><span class="uk-badge">0</span>
                 </a>
-                <a href="#" class="nav-icon">
+                <a href="/favourite-list" class="nav-icon">
                     <i class="fas fa-heart icon-color"></i><span class="uk-badge">0</span>
                 </a>
             </div>

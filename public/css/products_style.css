@@ -11,26 +11,6 @@
 #products {
     padding: 2%;
 }
-#products #right-panel div p.buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 3% !important;
-}
-#products #right-panel div p a {
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    width: 50%;
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: #7fad39;
-    color: #fff;
-    padding: 2%;
-    border-radius: 5px;
-}
 #products #right-panel .uk-card-body {
     padding-left: 6%;
     padding-right: 6%;

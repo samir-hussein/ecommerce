@@ -95,6 +95,10 @@ header nav #container {
     color: #7fad39;
 }
 
+.uk-dropdown-nav li a:hover {
+    text-decoration: none;
+}
+
 .uk-offcanvas-bar {
     padding-left: 10px;
 }

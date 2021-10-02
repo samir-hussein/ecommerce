@@ -62,7 +62,8 @@
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                        <ul
+                            class="mb-2 uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -203,7 +204,8 @@
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                        <ul
+                            class="mb-2 uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -334,7 +336,8 @@
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                        <ul
+                            class="mb-2 uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
@@ -534,7 +537,8 @@
 
                     <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                        <ul
+                            class="mb-2 uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
                             <li>
                                 <div class="card" style="width: 18rem;">
                                     <div>
