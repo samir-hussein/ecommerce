@@ -1,7 +1,8 @@
 <footer>
     <div class="row" id="div-1">
         <div class="col-12 col-lg-2 mb-4">
-            <a href="/" class="d-block"><img class="d-block m-auto" src="{{ asset('images/logo.png') }}" alt="logo" width="150"></a>
+            <a href="/" class="d-block"><img class="d-block m-auto" src="{{ asset('images/logo.png') }}"
+                    alt="logo" width="150"></a>
         </div>
         <div class="col-6 col-lg-3">
             <h3 class="uk-heading-bullet">POPULAR SEARCHES</h3>
@@ -23,6 +24,7 @@
                 <h3 class="uk-heading-bullet">LET US HELP YOU</h3>
                 <ul class="list-unstyled">
                     <li><a href="#">Contact us</a></li>
+                    <li><a href="/about-us">About us</a></li>
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Report a Product</a></li>
                     <li><a href="#">Sell on eCommerce</a></li>
@@ -63,6 +65,7 @@
         </div>
     </div>
     <div id="div-2">
-        <p class="mb-0 mx-auto text-center">© 2020 All rights reserved. Designed &amp; developed by <a href="https://web.facebook.com/SamirHussein011">Samir Ebrahim</a></p>
+        <p class="mb-0 mx-auto text-center">© 2020 All rights reserved. Designed &amp; developed by <a
+                href="https://web.facebook.com/SamirHussein011">Samir Ebrahim</a></p>
     </div>
 </footer>

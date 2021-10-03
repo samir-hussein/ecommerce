@@ -34,3 +34,9 @@ Route::get('/favourite-list', function () {
 Route::get('/orders', function () {
     return view('orders');
 });
+Route::get('/about-us', function () {
+    return view('about_us');
+});
+Route::get('/shopping-cart', function () {
+    return view('shopping_cart');
+});
