@@ -40,3 +40,6 @@ Route::get('/about-us', function () {
 Route::get('/shopping-cart', function () {
     return view('shopping_cart');
 });
+Route::get('/product-details', function () {
+    return view('product_details');
+});

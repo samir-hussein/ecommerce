@@ -82,7 +82,7 @@
                             </a></li>
                     </ul>
                 </div>
-                <a href="#" class="nav-icon">
+                <a href="/shopping-cart" class="nav-icon">
                     <i class="fas fa-shopping-cart icon-color"></i><span class="uk-badge">0</span>
                 </a>
                 <a href="/favourite-list" class="nav-icon">
