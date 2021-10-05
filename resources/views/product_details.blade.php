@@ -105,6 +105,10 @@
             border-color: #7fad39;
         }
 
+        .progress-bar {
+            background-color: #7fad39;
+        }
+
         @media (max-width: 575.98px) {
             .uk-thumbnav img {
                 width: 70px;
@@ -122,6 +126,10 @@
             .cards img {
                 width: 150px;
                 height: 200px;
+            }
+
+            .reviews {
+                width: 95% !important;
             }
         }
 
@@ -172,9 +180,13 @@
             </div>
             <div class="col-12 col-xl-6">
                 <div class="details">
-                    <h3>Lorem ipsum</h3>
-                    <input data-role="rating" data-value="3" data-static="true" data-stared-color="#7fad39">
-                    <p>120 EGP</p>
+                    <h3 class="mb-0">Lorem ipsum</h3>
+                    <div class="d-flex">
+                        <input data-role="rating" data-value="3" data-static="true" data-stared-color="#7fad39">
+                        <span>(12 ratings)</span>
+                    </div>
+                    <hr class="uk-divider">
+                    <b class="fs-5">EGP 120</b>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas
                         repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis
                         dolore quos sapiente tempore alias.</p>
@@ -191,6 +203,137 @@
                         <button class="ml-1 btn add-cart uk-box-shadow-small"><a href="#">
                                 <i class="fas fa-cart-plus"></i>ADD TO CART
                             </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5 mt-5">
+            <h3 class="uk-heading-bullet">Specifications</h3>
+            <div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-around w-25">
+                        <p class="m-0"><b>Production Country : </b></p>
+                        <p class="m-0">China</p>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-around w-25">
+                        <p class="m-0"><b>Production Country : </b></p>
+                        <p class="m-0">China</p>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-around w-25">
+                        <p class="m-0"><b>Production Country : </b></p>
+                        <p class="m-0">China</p>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="d-flex justify-content-around w-25">
+                        <p class="m-0"><b>Production Country : </b></p>
+                        <p class="m-0">China</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3 mt-5">
+            <h3 class="uk-heading-bullet">Customer Reviews</h3>
+            <div class="row">
+                <div class="col-12 col-xl-3 mb-5">
+                    <div class="d-flex mb-0">
+                        <input class="mb-2" data-role="rating" data-value="3" data-static="true"
+                            data-stared-color="#7fad39">
+                        <b>3 out of 5</b>
+                    </div>
+                    <p class="mb-3 mt-0">11 customer ratings</p>
+                    <div class="w-50 d-flex justify-content-around align-items-baseline">
+                        <b>5</b>
+                        <i class="fas fa-star icon-color"></i>
+                        <span>(12)</span>
+                        <div class="progress w-50">
+                            <div class="progress-bar text-center" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-around align-items-baseline">
+                        <b>4</b>
+                        <i class="fas fa-star icon-color"></i>
+                        <span>(12)</span>
+                        <div class="progress w-50">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-around align-items-baseline">
+                        <b>3</b>
+                        <i class="fas fa-star icon-color"></i>
+                        <span>(12)</span>
+                        <div class="progress w-50">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-around align-items-baseline">
+                        <b>2</b>
+                        <i class="fas fa-star icon-color"></i>
+                        <span>(12)</span>
+                        <div class="progress w-50">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="w-50 d-flex justify-content-around align-items-baseline">
+                        <b>1</b>
+                        <i class="fas fa-star icon-color"></i>
+                        <span>(12)</span>
+                        <div class="progress w-50">
+                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-9">
+                    <div class="w-75 reviews">
+                        <div>
+                            <div class="d-flex">
+                                <img class="uk-border-pill me-2" src="{{ asset('images/user_image.png') }}" width="30"
+                                    height="30" alt="Border pill">
+                                <p class="m-0">Lorem ipsum</p>
+                            </div>
+                            <input class="mb-0" data-role="rating" data-value="3" data-static="true"
+                                data-stared-color="#7fad39">
+                            <p class="mb-3 mt-0">22 September 2021</p>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <hr class="uk-divider">
+                        </div>
+
+                        <div>
+                            <div class="d-flex">
+                                <img class="uk-border-pill me-2" src="{{ asset('images/user_image.png') }}" width="30"
+                                    height="30" alt="Border pill">
+                                <p class="m-0">Lorem ipsum</p>
+                            </div>
+                            <input class="mb-0" data-role="rating" data-value="3" data-static="true"
+                                data-stared-color="#7fad39">
+                            <p class="mb-3 mt-0">22 September 2021</p>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <hr class="uk-divider">
+                        </div>
+
+                        <div>
+                            <div class="d-flex">
+                                <img class="uk-border-pill me-2" src="{{ asset('images/user_image.png') }}" width="30"
+                                    height="30" alt="Border pill">
+                                <p class="m-0">Lorem ipsum</p>
+                            </div>
+                            <input class="mb-0" data-role="rating" data-value="3" data-static="true"
+                                data-stared-color="#7fad39">
+                            <p class="mb-3 mt-0">22 September 2021</p>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <hr class="uk-divider">
+                        </div>
                     </div>
                 </div>
             </div>
