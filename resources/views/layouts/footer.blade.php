@@ -26,7 +26,7 @@
                     <li><a href="#">Contact us</a></li>
                     <li><a href="/about-us">About us</a></li>
                     <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Report a Product</a></li>
+                    <li><a href="/report-product">Report a Product</a></li>
                     <li><a href="#">Sell on eCommerce</a></li>
                 </ul>
             </div>

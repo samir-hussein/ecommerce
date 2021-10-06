@@ -209,11 +209,8 @@
                         <p>Shipping <span class="float-right">Gratis</span></p>
                         <hr class="uk-divider">
                         <p><b>The total amount of</b> <span class="float-right"><b>53.98</b></span></p>
-                        <button class="btn btn-primary w-100"><a href="#">GO TO CHECKOUT</a></button>
-                        <div class="mb-3 mt-3">
-                            <label for="discount" class="mb-2">Add a discount code (optional)</label>
-                            <input class="form-control" type="text" placeholder="Enter discount code" id="discount">
-                        </div>
+                        <button class="btn btn-primary w-100"><a href="/checkout" class="d-block">GO TO
+                                CHECKOUT</a></button>
                     </div>
                 </div>
             </div>

@@ -43,3 +43,9 @@ Route::get('/shopping-cart', function () {
 Route::get('/product-details', function () {
     return view('product_details');
 });
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+Route::get('/report-product', function () {
+    return view('report_product');
+});
