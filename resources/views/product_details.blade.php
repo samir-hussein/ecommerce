@@ -115,6 +115,33 @@
             padding-left: 2%;
         }
 
+        .sale {
+            background-color: rgb(241, 12, 12);
+            color: snow;
+            width: 60px;
+            height: 35px;
+            padding: 1%;
+            font-weight: 600;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sale p {
+            margin: 0;
+            white-space: nowrap;
+            display: inline-block;
+        }
+
+        .sale .corner {
+            position: absolute;
+            top: 0;
+            right: -20px;
+            width: 35px;
+            height: 35px;
+            transform: rotate(45deg);
+            background-color: #ffffff;
+        }
+
         @media (max-width: 575.98px) {
             .uk-thumbnav img {
                 width: 70px;
@@ -191,6 +218,10 @@
             <div class="col-12 col-xl-6">
                 <div class="details">
                     <h3 class="mb-0">Lorem ipsum</h3>
+                    <div class="sale">
+                        <p class="me-1">Sale</p>
+                        <p class="corner"></p>
+                    </div>
                     <div class="d-flex">
                         <input data-role="rating" data-value="3" data-static="true" data-stared-color="#7fad39">
                         <span>(12 ratings)</span>

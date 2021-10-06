@@ -133,6 +133,10 @@
                                 <a href="#"><img src="{{ asset('images/product2.jpg') }}" alt=""></a>
                             </div>
                             <div class="uk-card-body">
+                                <div class="sale">
+                                    <p class="me-1">Sale</p>
+                                    <p class="corner"></p>
+                                </div>
                                 <a href="#" class="text-decoration-none">
                                     <h3 class="uk-card-title">Lace Up Sneakers Modern – White</h3>
                                 </a>
@@ -153,6 +157,10 @@
                     <div>
                         <div class="uk-card uk-card-default">
                             <div class="uk-card-body">
+                                <div class="sale">
+                                    <p class="me-1">Sale</p>
+                                    <p class="corner"></p>
+                                </div>
                                 <a href="#" class="text-decoration-none">
                                     <h3 class="uk-card-title">Lace Up Sneakers Modern – White</h3>
                                 </a>
