@@ -140,6 +140,16 @@ header nav #container {
     border-bottom: 3px solid #7fad39;
 }
 
+.to-top {
+    background-color: #7fad39;
+    color: #eee;
+    padding: 1%;
+}
+
+.to-top svg {
+    margin-left: 0.5%;
+}
+
 footer #div-1 {
     background-color: #323232;
     padding: 2% 10%;

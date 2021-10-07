@@ -1,4 +1,5 @@
 <footer>
+    <button class="col-12 btn fs-6 to-top" uk-totop uk-scroll>BACK TO TOP</button>
     <div class="row" id="div-1">
         <div class="col-12 col-lg-2 mb-4">
             <a href="/" class="d-block"><img class="d-block m-auto" src="{{ asset('images/logo.png') }}"
