@@ -118,12 +118,13 @@
         .sale {
             background-color: rgb(241, 12, 12);
             color: snow;
-            width: 60px;
+            width: 70px;
             height: 35px;
             padding: 1%;
             font-weight: 600;
             overflow: hidden;
             position: relative;
+            text-transform: uppercase;
         }
 
         .sale p {
@@ -135,7 +136,7 @@
         .sale .corner {
             position: absolute;
             top: 0;
-            right: -20px;
+            right: -25px;
             width: 35px;
             height: 35px;
             transform: rotate(45deg);
