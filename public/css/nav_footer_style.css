@@ -144,6 +144,7 @@ header nav #container {
     background-color: #7fad39;
     color: #eee;
     padding: 1%;
+    height: 40px;
 }
 
 .to-top svg {

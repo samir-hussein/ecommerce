@@ -34,9 +34,6 @@
     {{-- preloader css link --}}
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
 
-    {{-- my style file --}}
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
     @yield('style')
 </head>
 
@@ -71,6 +68,9 @@
         // wow.js init
         new WOW().init();
     </script>
+
+    @yield('script')
+
 </body>
 
 </html>

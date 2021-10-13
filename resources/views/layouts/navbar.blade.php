@@ -77,7 +77,7 @@
                         <li><a href="/sign-up"><button class="uk-button uk-button-default w-100">SIGN UP<span
                                         uk-icon="sign-in"></span></button>
                             </a></li>
-                        <li><a href="#"><button class="uk-button uk-button-default w-100">SIGN OUT<span
+                        <li><a href="/api/logout"><button class="uk-button uk-button-default w-100">SIGN OUT<span
                                         uk-icon="sign-out"></span></button>
                             </a></li>
                     </ul>
@@ -93,7 +93,8 @@
 
         <div class="m-auto" id="catigory-nav-list">
             <ul class="list-inline mb-0 mt-3">
-                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">all</a>
+                <li class="list-inline-item text-capitalize small-font"><a href="/products"
+                        class="text-decoration-none">all</a>
                 </li>
                 <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Mobiles
                         &

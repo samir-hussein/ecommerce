@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Models\User;
+use App\Models\Customer;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,20 +20,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    dd(session()->all());
+
     return view('home');
 });
-Route::get('/products/{category}', function () {
+
+Route::get('/products/{category?}', function () {
     return view('products');
-});
+})->middleware('auth:customer');
+
 Route::get('/sign-in', function () {
     return view('sign_in');
-});
+})->name('sign-in');
 Route::get('/sign-up', function () {
     return view('sign_up');
 });
 Route::get('/profile', function () {
     return view('customer_profile');
-});
+})->middleware("auth");
 Route::get('/favourite-list', function () {
     return view('favourite_list');
 });

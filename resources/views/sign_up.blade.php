@@ -88,18 +88,18 @@
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label float-start" for="flexRadioDefault1">
-                      Seller
+                        Seller
                     </label>
-                  </div>
-                  <div class="form-check">
+                </div>
+                <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                     <label class="form-check-label float-start" for="flexRadioDefault2">
-                      Shopper
+                        Shopper
                     </label>
-                  </div>
+                </div>
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
                 <div class="mt-3">Already have an account?<a href="/sign-in"> Sign in</a></div>
-                <p class="mt-5 mb-3 text-muted">&copy; 2021-Now</p> 
+                <p class="mt-5 mb-3 text-muted">&copy; 2021-Now</p>
             </form>
         </main>
 

@@ -202,7 +202,7 @@
                     <hr class="uk-divider">
 
                 </div>
-                <div class="col-12 col-xl-5">
+                <div class="col-12 col-xl-5 m-0">
                     <div class="w-75 m-auto" id="checkout">
                         <h3>The total amount of</h3>
                         <p>Temporary amount <span class="float-right">53.98</span></p>

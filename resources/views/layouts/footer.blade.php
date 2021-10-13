@@ -34,10 +34,10 @@
             <div class="row">
                 <h3 class="uk-heading-bullet">MY ACCOUNT</h3>
                 <ul class="list-unstyled">
-                    <li><a href="#">Log In</a> / <a href="#">Register</a></li>
-                    <li><a href="#">My Shopping Cart</a></li>
-                    <li><a href="#">My Orders</a></li>
-                    <li><a href="#">Wish Lists</a></li>
+                    <li><a href="/sign-in">Log In</a> / <a href="/sign-up">Register</a></li>
+                    <li><a href="/shopping-cart">My Shopping Cart</a></li>
+                    <li><a href="/orders">My Orders</a></li>
+                    <li><a href="/favourite-list">Wish Lists</a></li>
                 </ul>
             </div>
         </div>

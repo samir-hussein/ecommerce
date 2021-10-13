@@ -10,16 +10,21 @@
             position: relative;
         }
 
+        .body-pro {
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
         .left-panel {
-            background-color: #323232;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            border-right: 4px solid #7fad39;
-            color: snow;
+            padding: 2%;
+            width: 90%;
+            border-radius: 5px;
+            border: 2px solid #e7e7e7;
+            margin: auto;
         }
 
         .left-panel h4 {
-            color: #eee;
+            color: rgb(170, 170, 170);
             font-size: 18px;
             white-space: nowrap;
         }
@@ -51,8 +56,6 @@
         .rating ul.stars {
             justify-content: center;
         }
-
-        .card-pro {}
 
         .card-pro .heart {
             background-color: #ff3d71;
@@ -103,11 +106,16 @@
         }
 
         @media (max-width: 575.98px) {
-            .left-panel {
+            .left-panel-mobile {
                 position: absolute;
                 display: none;
                 z-index: 999;
                 height: 100%;
+                background-color: #323232;
+            }
+
+            .left-panel {
+                background-color: #ffffff;
             }
 
             #filter {
@@ -123,12 +131,12 @@
 @endsection
 
 @section('content')
-    <section class="uk-box-shadow-small" id="sec-pro">
-        <div class="row">
+    <section id="sec-pro">
+        <div class="row uk-box-shadow-small body-pro">
             <button class="w-50 m-auto mt-3 mb-3 uk-box-shadow-small" id="filter"><i
                     class="fas fa-filter me-2"></i>Filter</button>
-            <div class="col-12 col-xl-2 left-panel uk-box-shadow-small">
-                <div>
+            <div class="col-12 col-xl-3 p-3 left-panel-mobile">
+                <div class="left-panel">
                     <div class="border-bottom-filter">
                         <button class="uk-close-large float-right" type="button" uk-close></button>
                         <h4 class="mt-1">BRAND</h4>
@@ -243,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-xl-10">
+            <div class="col-12 col-xl-9">
                 <div class="row">
                     <div class="card-pro col-12 col-xl-4 mb-4">
                         <div class="card-pro-head uk-box-shadow-small">
@@ -358,10 +366,10 @@
 @section('script')
     <script>
         $("#filter").click(function() {
-            $(".left-panel").toggle(500);
+            $(".left-panel-mobile").toggle(500);
         })
         $(".uk-close-large").click(function() {
-            $(".left-panel").toggle(500);
+            $(".left-panel-mobile").toggle(500);
         })
     </script>
 @endsection
