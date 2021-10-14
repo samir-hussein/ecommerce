@@ -66,19 +66,17 @@
 
                 <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 500">
                     <ul class="uk-nav uk-dropdown-nav">
-                        <li class="uk-active"><a href="/sign-in"><button style="background: #7fad39;color:snow"
+                        <li class="uk-active" id="sign-in"><a href="/sign-in"><button
+                                    style="background: #7fad39;color:snow"
                                     class="uk-button uk-button-default w-100">SIGN IN<span
                                         uk-icon="sign-in"></span></button>
                             </a></li>
-                        <li class="uk-active"><a href="/sign-in"><button style="background: #7fad39;color:snow"
-                                    class="uk-button uk-button-default w-100">My Profile<span
-                                        uk-icon="sign-in"></span></button>
+                        <li class="uk-active" id="btn-profile"><a href="/profile"><button
+                                    style="background: #7fad39;color:snow" class="uk-button uk-button-default w-100">My
+                                    Profile<span uk-icon="sign-in"></span></button>
                             </a></li>
-                        <li><a href="/sign-up"><button class="uk-button uk-button-default w-100">SIGN UP<span
-                                        uk-icon="sign-in"></span></button>
-                            </a></li>
-                        <li><a href="/api/logout"><button class="uk-button uk-button-default w-100">SIGN OUT<span
-                                        uk-icon="sign-out"></span></button>
+                        <li id="sign-out"><a href="/api/logout"><button class="uk-button uk-button-default w-100">SIGN
+                                    OUT<span uk-icon="sign-out"></span></button>
                             </a></li>
                     </ul>
                 </div>

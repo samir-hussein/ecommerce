@@ -20,42 +20,49 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    dd(session()->all());
-
     return view('home');
 });
 
 Route::get('/products/{category?}', function () {
     return view('products');
-})->middleware('auth:customer');
+});
 
 Route::get('/sign-in', function () {
     return view('sign_in');
 })->name('sign-in');
+
 Route::get('/sign-up', function () {
     return view('sign_up');
 });
+
 Route::get('/profile', function () {
     return view('customer_profile');
-})->middleware("auth");
+})->middleware('auth:customer');
+
 Route::get('/favourite-list', function () {
     return view('favourite_list');
-});
+})->middleware('auth:customer');
+
 Route::get('/orders', function () {
     return view('orders');
-});
+})->middleware('auth:customer');
+
 Route::get('/about-us', function () {
     return view('about_us');
 });
+
 Route::get('/shopping-cart', function () {
     return view('shopping_cart');
 });
+
 Route::get('/product-details', function () {
     return view('product_details');
 });
+
 Route::get('/checkout', function () {
     return view('checkout');
 });
+
 Route::get('/report-product', function () {
     return view('report_product');
 });

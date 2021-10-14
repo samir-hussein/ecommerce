@@ -85,6 +85,28 @@
 
         // wow.js init
         new WOW().init();
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: "get",
+            url: '/api/is-auth',
+            success: function(data) {
+                if (data.message != "authenticated") {
+                    $("#sign-in").css('display', 'block');
+                    $("#sign-out").css('display', 'none');
+                    $("#btn-profile").css('display', 'none');
+                } else {
+                    $("#sign-in").css('display', 'none');
+                    $("#sign-out").css('display', 'block');
+                    $("#btn-profile").css('display', 'block');
+                }
+            }
+        });
     </script>
 
     @yield('script')

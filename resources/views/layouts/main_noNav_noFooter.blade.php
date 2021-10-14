@@ -31,8 +31,29 @@
     {{-- wow.js css link --}}
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 
+    {{-- Font Awesome link --}}
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
+
     {{-- preloader css link --}}
     <link rel="stylesheet" href="{{ asset('css/preloader.css') }}">
+
+    <style>
+        .btn-facebook,
+        .btn-google,
+        .btn-facebook:hover,
+        .btn-google:hover {
+            background-color: #1877f2;
+            color: snow;
+            width: 90%;
+            text-decoration: none;
+        }
+
+        .btn-google,
+        .btn-google:hover {
+            background-color: #db3236;
+        }
+
+    </style>
 
     @yield('style')
 </head>

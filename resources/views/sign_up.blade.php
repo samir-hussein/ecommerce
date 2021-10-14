@@ -68,36 +68,12 @@
                 <a href="/"><img class="mb-4" src="{{ asset('images/logo.png') }}" alt="logo" width="150"></a>
                 <h1 class="h3 mb-3 fw-normal">Create New Account</h1>
 
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Your Name</label>
-                </div>
-
-                <div class="form-floating mt-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mt-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Re-enter Password">
-                    <label for="floatingPassword">Re-enter Password</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label float-start" for="flexRadioDefault1">
-                        Seller
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label float-start" for="flexRadioDefault2">
-                        Shopper
-                    </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                <a href="/api/auth/google" class="mb-3 btn btn-google btn-user btn-block">
+                    <i class="fab fa-google fa-fw"></i> Sign up with Google
+                </a>
+                <a href="/api/auth/facebook" class="mb-3 btn btn-facebook btn-user btn-block">
+                    <i class="fab fa-facebook"></i> Sign up with Facebook
+                </a>
                 <div class="mt-3">Already have an account?<a href="/sign-in"> Sign in</a></div>
                 <p class="mt-5 mb-3 text-muted">&copy; 2021-Now</p>
             </form>

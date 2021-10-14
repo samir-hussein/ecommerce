@@ -28,8 +28,6 @@ class AuthController extends Controller
 
 
             if ($check) {
-                Session::save();
-                dd(session()->all());
                 return response()->json(['message' => 'success']);
             } else {
                 return response()->json(['message' => 'The provided credentials do not match our records.']);
@@ -50,6 +48,15 @@ class AuthController extends Controller
             Auth::guard('seller')->logout();
         }
 
-        return redirect()->intended('/');
+        return redirect()->to('/');
+    }
+
+    public function isAuth()
+    {
+        if (Auth::guard('customer')->check()) {
+            return response()->json(['message' => 'authenticated']);
+        }
+
+        return response()->json(['message' => 'not authenticated']);
     }
 }

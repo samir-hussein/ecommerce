@@ -22,6 +22,8 @@ class Customer extends Authenticatable
         'name',
         'email',
         'password',
+        'google_id',
+        'fb_id',
     ];
 
     public $timestamps = false;
@@ -33,6 +35,9 @@ class Customer extends Authenticatable
      */
     protected $hidden = [
         'password',
+        'google_id',
+        'fb_id',
+        'email_verified_at',
     ];
 
     /**

@@ -34,7 +34,7 @@
             <div class="row">
                 <h3 class="uk-heading-bullet">MY ACCOUNT</h3>
                 <ul class="list-unstyled">
-                    <li><a href="/sign-in">Log In</a> / <a href="/sign-up">Register</a></li>
+                    <li><a href="/sign-in">Log In / Register</a></li>
                     <li><a href="/shopping-cart">My Shopping Cart</a></li>
                     <li><a href="/orders">My Orders</a></li>
                     <li><a href="/favourite-list">Wish Lists</a></li>
