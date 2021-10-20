@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\FacebookController;
 
@@ -33,3 +34,14 @@ Route::get('auth/facebook', [FacebookController::class, 'facebookRedirect']);
 Route::get('auth/facebook/callback', [FacebookController::class, 'loginWithFacebook']);
 
 Route::post('customer-info', [CustomerController::class, 'read']);
+
+
+
+Route::middleware('auth:customer')->group(function () {
+
+    // Cart Routes
+    Route::get('cart-clear', [CartController::class, 'clear']);
+    Route::get('cart-add-item/{item_id}', [CartController::class, 'addItem']);
+    Route::get('cart-remove-item/{item_id}', [CartController::class, 'removeItem']);
+    Route::get('cart-read', [CartController::class, 'read']);
+});

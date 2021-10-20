@@ -24,7 +24,6 @@ class FacebookController extends Controller
             // Check Users Email If Already There
             $is_user = Customer::where('email', $user->getEmail())->first();
             if (!$is_user) {
-
                 $saveUser = Customer::updateOrCreate([
                     'fb_id' => $user->getId(),
                 ], [
@@ -33,7 +32,7 @@ class FacebookController extends Controller
                     'password' => Hash::make($user->getName() . '@' . $user->getId())
                 ]);
             } else {
-                $saveUser = Customer::where('email',  $user->getEmail())->update([
+                $saveUser = Customer::where('email', $user->getEmail())->update([
                     'fb_id' => $user->getId(),
                 ]);
                 $saveUser = Customer::where('email', $user->getEmail())->first();
@@ -42,7 +41,7 @@ class FacebookController extends Controller
 
             Auth::guard('customer')->loginUsingId($saveUser->id);
 
-            return redirect()->to('/');
+            return redirect()->intended();
         } catch (\Throwable $th) {
             throw $th;
         }

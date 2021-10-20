@@ -35,34 +35,38 @@ Route::get('/sign-up', function () {
     return view('sign_up');
 });
 
-Route::get('/profile', function () {
-    return view('customer_profile');
-})->middleware('auth:customer');
-
-Route::get('/favourite-list', function () {
-    return view('favourite_list');
-})->middleware('auth:customer');
-
-Route::get('/orders', function () {
-    return view('orders');
-})->middleware('auth:customer');
-
 Route::get('/about-us', function () {
     return view('about_us');
-});
-
-Route::get('/shopping-cart', function () {
-    return view('shopping_cart');
 });
 
 Route::get('/product-details', function () {
     return view('product_details');
 });
 
-Route::get('/checkout', function () {
-    return view('checkout');
-});
 
-Route::get('/report-product', function () {
-    return view('report_product');
+
+Route::middleware('auth:customer')->group(function () {
+    Route::get('/profile', function () {
+        return view('customer_profile');
+    });
+    
+    Route::get('/favourite-list', function () {
+        return view('favourite_list');
+    });
+    
+    Route::get('/orders', function () {
+        return view('orders');
+    });
+
+    Route::get('/shopping-cart', function () {
+        return view('shopping_cart');
+    });
+
+    Route::get('/checkout', function () {
+        return view('checkout');
+    });
+    
+    Route::get('/report-product', function () {
+        return view('report_product');
+    });
 });
