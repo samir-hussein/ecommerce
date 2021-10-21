@@ -22,6 +22,12 @@ class Customer extends Authenticatable
         'name',
         'email',
         'password',
+        'phone',
+        'country',
+        'city',
+        'zip',
+        'address_1',
+        'address_2',
         'google_id',
         'fb_id',
     ];

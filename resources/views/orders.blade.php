@@ -94,6 +94,7 @@
         let url = window.location.href;
         url = url.split("/");
         url = url[url.length - 1];
+        url = url.replace("#", "");
         $("#" + url).addClass("active");
     </script>
 @endsection

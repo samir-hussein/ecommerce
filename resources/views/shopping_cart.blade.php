@@ -143,9 +143,9 @@
         function getCards() {
             $.ajax({
                 type: "get",
-                url: '/api/cart-read',
+                url: '/api/cart/read',
                 success: function(data) {
-                    if (!data.message) {
+                    if (data.message == 'success') {
                         $("#total_amount").text(data.total_price + " EGP");
                         let cards = "";
                         let img_name;
@@ -173,11 +173,11 @@
                             </div>
                             <div class="row">
                                 <div class="col-9 actions">
-                                    <a data-id="` + key['product_id'] + `" href="/api/cart-remove-item/` + key[
-                                'product_id'] + `" class="nav-icon remove-item">
+                                    <a data-id="` + key['product_id'] + `" href="/api/cart/remove-item/` + key[
+                                'product_id'] + `/all" class="nav-icon remove-button">
                                         <i class="fas fa-trash icon-color"></i>REMOVE ITEM
                                     </a>
-                                    <a href="#" class="nav-icon ml-5">
+                                    <a href="/api/wishlist/add-item/` + key['product_id'] + `" class="nav-icon ml-5 add-wishlist">
                                         <i class="fas fa-heart icon-color"></i>MOVE TO WISH LIST
                                     </a>
                                 </div>
@@ -193,6 +193,7 @@
 
                         $("#all_cards").html(cards);
                     } else {
+                        $("#total_amount").text("0.0 EGP");
                         $("#all_cards").html("<p class='text-center fs-4'>" + data.message +
                             " <a href='/products'>Shop Now</a></p>");
                     }
@@ -204,20 +205,51 @@
         $(document).on('click', '.add-item', function() {
             $.ajax({
                 type: "get",
-                url: '/api/cart-add-item/' + $(this).attr('data-id'),
+                url: '/api/cart/add-item/' + $(this).attr('data-id'),
                 success: function(data) {
                     getCards();
+                    countCartItems();
                 }
             });
         });
 
-        $(document).on('click', '.remove-item', function(e) {
+        $(document).on('click', '.remove-item', function() {
+            $.ajax({
+                type: "get",
+                url: '/api/cart/remove-item/' + $(this).attr('data-id'),
+                success: function(data) {
+                    getCards();
+                    countCartItems();
+                }
+            });
+        });
+
+        $(document).on('click', '.remove-button', function(e) {
             e.preventDefault();
             $.ajax({
                 type: "get",
-                url: '/api/cart-remove-item/' + $(this).attr('data-id'),
+                url: $(this).attr('href'),
                 success: function(data) {
                     getCards();
+                    countCartItems();
+                }
+            });
+        });
+
+        $(document).on('click', '.add-wishlist', function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "get",
+                url: $(this).attr('href'),
+                success: function(data) {
+                    countWishlistItems();
+                    UIkit.notification({
+                        message: data.message,
+                        status: 'primary',
+                        pos: 'top-right',
+                        timeout: 3000,
+                        pos: "top-center"
+                    });
                 }
             });
         });

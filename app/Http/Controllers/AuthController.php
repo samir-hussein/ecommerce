@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
@@ -19,7 +18,6 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), $rules);
 
         if (!$validator->fails()) {
-
             if (!empty($request->guard)) {
                 $check = Auth::guard($request->guard)->attempt(['email' => $request->email, 'password' => $request->password]);
             } else {

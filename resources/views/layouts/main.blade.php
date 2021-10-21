@@ -107,6 +107,28 @@
                 }
             }
         });
+
+        function countCartItems() {
+            $.ajax({
+                type: "get",
+                url: '/api/cart/count-items',
+                success: function(data) {
+                    $(".numberOfCartItems").text(data.message);
+                }
+            });
+        }
+        countCartItems();
+
+        function countWishlistItems() {
+            $.ajax({
+                type: "get",
+                url: '/api/wishlist/count-items',
+                success: function(data) {
+                    $(".numberOfWishlistItems").text(data.message);
+                }
+            });
+        }
+        countWishlistItems();
     </script>
 
     @yield('script')

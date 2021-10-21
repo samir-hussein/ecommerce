@@ -81,10 +81,10 @@
                     </ul>
                 </div>
                 <a href="/shopping-cart" class="nav-icon">
-                    <i class="fas fa-shopping-cart icon-color"></i><span class="uk-badge">0</span>
+                    <i class="fas fa-shopping-cart icon-color"></i><span class="uk-badge numberOfCartItems">0</span>
                 </a>
                 <a href="/favourite-list" class="nav-icon">
-                    <i class="fas fa-heart icon-color"></i><span class="uk-badge">0</span>
+                    <i class="fas fa-heart icon-color"></i><span class="uk-badge numberOfWishlistItems">0</span>
                 </a>
             </div>
         </div>

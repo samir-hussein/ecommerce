@@ -17,4 +17,20 @@ class CustomerController extends Controller
 
         return response()->json(['message' => 'not authenticated']);
     }
+
+    public function edit(Request $request)
+    {
+        if (Auth::guard('customer')->check()) {
+            if ($request->has("email")) {
+                return response()->json(["message" => "not allowed"]);
+            }
+
+            $user = Customer::find(Auth::guard('customer')->id());
+
+            $user->update($request->all());
+            return response()->json($user);
+        }
+
+        return response()->json(["message" => "not authenticated"]);
+    }
 }
