@@ -19,8 +19,7 @@
     {{-- font links --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
 
     {{-- metro css link --}}
     <link rel="stylesheet" href="{{ asset('css/metro-all.min.css') }}">
@@ -104,6 +103,68 @@
                     $("#sign-in").css('display', 'none');
                     $("#sign-out").css('display', 'block');
                     $("#btn-profile").css('display', 'block');
+                }
+            }
+        });
+
+        $(document).on('click', '.caret', function(e) {
+            $(this).siblings(".nested").toggle("active");
+        })
+
+        $.ajax({
+            type: "get",
+            url: '/api/categories/read',
+            success: function(data) {
+                let categories = "";
+                let count = 0;
+                if (data != "") {
+                    for (key in data) {
+                        if (data[key].name) {
+                            if (count < 6) {
+                                $("#random-category-list").append(
+                                    `<li class="list-inline-item text-capitalize small-font"><a href="/products/` +
+                                    data[key].name + `" class="text-decoration-none">` +
+                                    data[key].name + `</a></li>`
+                                );
+                                count++;
+                            }
+                            if (data[key].sub_categories != "") {
+                                categories +=
+                                    `
+                                <li><i class="caret fas fa-stream icon-color"></i>
+                                <a href="/products/` + data[key].name +
+                                    `" class="text-capitalize text-decoration-none">` +
+                                    data[key].name +
+                                    `</a><ul class="pl-5 nested list-unstyled lineHeight">`;
+
+                                for (sub in data[key].sub_categories) {
+                                    if (data[key].sub_categories[sub].name) {
+                                        categories +=
+                                            `<li>
+                                <a href="/products/` + data[key].name +
+                                            `/` + data[key].sub_categories[sub].name +
+                                            `" class="caret text-capitalize text-decoration-none"><i class="fas fa-ellipsis-h icon-color"></i> ` +
+                                            data[key].sub_categories[sub].name +
+                                            `</a></li>`;
+                                    }
+                                }
+
+
+                                categories += `</ul></li>`;
+                            } else {
+                                categories +=
+                                    `
+                                    <li>
+                                <a href="/products/` + data[key].name +
+                                    `" class="caret text-capitalize text-decoration-none"><i class="fas fa-ellipsis-h icon-color"></i> ` +
+                                    data[key].name +
+                                    `</a></li>
+                    `;
+                            }
+                        }
+                    }
+
+                    $("#category_tree").html(categories);
                 }
             }
         });

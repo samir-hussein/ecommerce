@@ -137,114 +137,148 @@
                     class="fas fa-filter me-2"></i>Filter</button>
             <div class="col-12 col-xl-3 p-3 left-panel-mobile">
                 <div class="left-panel">
-                    <div class="border-bottom-filter">
+                    <div>
                         <button class="uk-close-large float-right" type="button" uk-close></button>
-                        <h4 class="mt-1">BRAND</h4>
-                        <form action="">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="BRAND1">
-                                <label class="form-check-label" for="BRAND1">
-                                    Default checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="BRAND2">
-                                <label class="form-check-label" for="BRAND2">
-                                    Checked checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="BRAND3">
-                                <label class="form-check-label" for="BRAND3">
-                                    Checked checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="BRAND4">
-                                <label class="form-check-label" for="BRAND4">
-                                    Checked checkbox
-                                </label>
-                            </div>
-                        </form>
+                        <ul class="p-0 list-unstyled lineHeight">
+                            <li class="caret-filter"><i class="fa-lg fas fa-caret-right icon-color"></i> <span
+                                    class="fs-5">BRAND</span>
+                            </li>
+                            <ul class="nested list-unstyled lineHeight pl-5">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="BRAND1">
+                                        <label class="form-check-label" for="BRAND1">
+                                            Default checkbox
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="BRAND2">
+                                        <label class="form-check-label" for="BRAND2">
+                                            Checked checkbox
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
                     </div>
 
-                    <div class="border-bottom-filter">
+                    <div>
+                        <ul class="p-0 list-unstyled lineHeight">
+                            <li class="caret-filter"><i class="fa-lg fas fa-caret-right icon-color"></i> <span
+                                    class="fs-5">PRODUCT
+                                    RATING</span>
+                            </li>
+                            <ul class="nested active list-unstyled lineHeight pl-5">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value=""
+                                            id="RATING5">
+                                        <label class="form-check-label" for="RATING5">
+                                            <input data-role="rating" data-value="5" data-static="true"
+                                                data-stared-color="#7fad39">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value=""
+                                            id="RATING5">
+                                        <label class="form-check-label" for="RATING5">
+                                            <input data-role="rating" data-value="4" data-static="true"
+                                                data-stared-color="#7fad39">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value=""
+                                            id="RATING5">
+                                        <label class="form-check-label" for="RATING5">
+                                            <input data-role="rating" data-value="3" data-static="true"
+                                                data-stared-color="#7fad39">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value=""
+                                            id="RATING5">
+                                        <label class="form-check-label" for="RATING5">
+                                            <input data-role="rating" data-value="2" data-static="true"
+                                                data-stared-color="#7fad39">
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" value=""
+                                            id="RATING5">
+                                        <label class="form-check-label" for="RATING5">
+                                            <input data-role="rating" data-value="1" data-static="true"
+                                                data-stared-color="#7fad39">
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="p-0 list-unstyled lineHeight">
+                            <li class="caret-filter"><i class="fa-lg fas fa-caret-right icon-color"></i> <span
+                                    class="fs-5">PRICE
+                                    (EGP)</span>
+                            </li>
+                            <ul class="pl-5 nested active list-unstyled lineHeight">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="DISCOUNT1">
+                                        <label class="form-check-label" for="DISCOUNT1">
+                                            On SALE
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" value="" id="DISCOUNT2">
+                                        <label class="form-check-label" for="DISCOUNT2">
+                                            From high price to low
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="price" value="" id="DISCOUNT3">
+                                        <label class="form-check-label" for="DISCOUNT3">
+                                            From low price to high
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="d-block">From</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" value="20">
+                                        <span class="input-group-text">EGP</span>
+                                    </div>
+                                    <label class="d-block">To</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" value="200">
+                                        <span class="input-group-text">EGP</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+
+                    <div>
                         <form action="">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="DISCOUNT1">
-                                <label class="form-check-label" for="DISCOUNT1">
-                                    On SALE
-                                </label>
-                            </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="DISCOUNT1">
                                 <label class="form-check-label" for="DISCOUNT1">
                                     Best seller
                                 </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="price" value="" id="DISCOUNT2">
-                                <label class="form-check-label" for="DISCOUNT2">
-                                    From high price to low
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="price" value="" id="DISCOUNT3">
-                                <label class="form-check-label" for="DISCOUNT3">
-                                    From low price to high
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="border-bottom-filter">
-                        <h4>PRODUCT RATING</h4>
-                        <form action="">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="RATING5">
-                                <label class="form-check-label" for="RATING5">
-                                    <input data-role="rating" data-value="5" data-static="true" data-stared-color="#7fad39">
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="RATING4">
-                                <label class="form-check-label" for="RATING4">
-                                    <input data-role="rating" data-value="4" data-static="true" data-stared-color="#7fad39">
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="RATING3">
-                                <label class="form-check-label" for="RATING3">
-                                    <input data-role="rating" data-value="3" data-static="true" data-stared-color="#7fad39">
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="RATING2">
-                                <label class="form-check-label" for="RATING2">
-                                    <input data-role="rating" data-value="2" data-static="true" data-stared-color="#7fad39">
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="" id="RATING1">
-                                <label class="form-check-label" for="RATING1">
-                                    <input data-role="rating" data-value="1" data-static="true" data-stared-color="#7fad39">
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="border-bottom-filter">
-                        <h4>PRICE (EGP)</h4>
-                        <form action="" style="margin-top: 5% !important">
-                            <label class="d-block">From</label>
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control" value="20">
-                                <span class="input-group-text">EGP</span>
-                            </div>
-                            <label class="d-block">To</label>
-                            <div class="input-group">
-                                <input type="number" class="form-control" value="200">
-                                <span class="input-group-text">EGP</span>
                             </div>
                         </form>
                     </div>
@@ -358,6 +392,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mt-4">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
@@ -370,6 +422,10 @@
         })
         $(".uk-close-large").click(function() {
             $(".left-panel-mobile").toggle(500);
+        })
+
+        $(document).on('click', '.caret-filter', function(e) {
+            $(this).siblings(".nested").toggle("active");
         })
     </script>
 @endsection

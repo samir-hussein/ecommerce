@@ -15,30 +15,8 @@
 
                             <h3 class="text-center">All Categories</h3>
 
-                            <ul data-role="treeview">
-                                <li>test</li>
-                                <li>test</li>
-                                <li>test</li>
-                                <li data-caption="test2" data-collapsed="true">
-                                    <ul>
-                                        <li>test</li>
-                                        <li data-caption="test3">
-                                            <ul>
-                                                <li>team</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li data-caption="test2" data-collapsed="true">
-                                    <ul>
-                                        <li>test</li>
-                                        <li data-caption="test3">
-                                            <ul>
-                                                <li>team</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+                            <ul id="category_tree" class="p-0 list-unstyled lineHeight">
+
                             </ul>
                         </div>
                     </div>
@@ -90,34 +68,10 @@
         </div>
 
         <div class="m-auto" id="catigory-nav-list">
-            <ul class="list-inline mb-0 mt-3">
+            <ul class="list-inline mb-0 mt-3" id="random-category-list">
                 <li class="list-inline-item text-capitalize small-font"><a href="/products"
                         class="text-decoration-none">all</a>
                 </li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Mobiles
-                        &
-                        Accessories</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#"
-                        class="text-decoration-none">Computer &
-                        Accessories</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">TVs</a>
-                </li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#"
-                        class="text-decoration-none">Laptops</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Cameras
-                        &
-                        Accessories</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#"
-                        class="text-decoration-none">Headphones</a>
-                </li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#"
-                        class="text-decoration-none">Speakers</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#"
-                        class="text-decoration-none">Wearable
-                        Technology</a></li>
-                <li class="list-inline-item text-capitalize small-font"><a href="#" class="text-decoration-none">Home
-                        Entertainment
-                        Systems</a></li>
             </ul>
         </div>
     </nav>

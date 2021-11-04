@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\FacebookController;
 use App\Http\Controllers\WishlistController;
@@ -37,6 +37,9 @@ Route::get('auth/facebook/callback', [FacebookController::class, 'loginWithFaceb
 
 Route::get('cart/count-items', [CartController::class, 'numberOfItems']);
 Route::get('wishlist/count-items', [WishlistController::class, 'numberOfItems']);
+
+Route::get('products/{category?}/{sub_category?}', [ProductController::class, 'show']);
+Route::get('categories/read', [ProductController::class, 'categories']);
 
 Route::middleware('auth:customer')->group(function () {
 
